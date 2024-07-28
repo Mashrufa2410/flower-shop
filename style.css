@@ -109,38 +109,46 @@ section{
 .more-flower-cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-     column-gap: 5px;
+     justify-content: center;
+}
+
+.more-flower-card{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 55px;
 }
 
 /* subcribe section */
 .subscribe-section {
     background-image: url("./Flower Asset/Rectangle\ 9.png");
-    padding: 50px;
-    margin-left: 170px;
-    margin-bottom: 70px;
+    padding: 50px 20px;
+    margin: 0 auto 70px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 920px;
     min-height: 200px;
-    width: 100%;
+    width: calc(100% - 40px); /* Responsive padding */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 .subscribe-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    margin: 0px 50px;
 }
 
 .subscribe-form input {
-    flex: 1;
+    flex: 1 1 auto;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
     outline: none;
+    max-width: 500px;
 }
+
 footer{
     background-color: black;
     padding: 50px ;
@@ -167,10 +175,36 @@ footer{
     .more-flower-cards{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-    }    
+    }   
+    .more-flower-card{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    } 
    .deal-section{
     flex-direction: column;
     align-items: center;
    } 
+   subscribe-section {
+    padding: 30px 15px;
+    margin: 0 10px 50px;
+}
+
+.subscribe-form {
+    flex-direction: column;
+}
+
+.subscribe-form input{
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.subscribe-form input {
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    border-radius: 5px;
+}
 }
