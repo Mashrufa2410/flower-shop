@@ -22,7 +22,7 @@ section{
 /* banner */
 .banner{
     background-color: #e554732d;
-    width: 1365px;
+
     display: flex;
 }
 .banner-context-div{
@@ -50,7 +50,12 @@ section{
     color: #333;
 }
 
-
+.deal-section{
+    display: flex; gap: 55px;
+     justify-content: center;
+      background-color: #e554732d;
+       margin-bottom: 70px;
+}
 
 .flower-cards {
     display: flex;
@@ -98,6 +103,15 @@ section{
     color: #333;
     text-align: center;
 }
+
+/* more-flower-card's */
+
+.more-flower-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+     column-gap: 5px;
+}
+
 /* subcribe section */
 .subscribe-section {
     background-image: url("./Flower Asset/Rectangle\ 9.png");
@@ -130,4 +144,33 @@ section{
 footer{
     background-color: black;
     padding: 50px ;
+}
+@media screen and (max-width: 580px) {
+    .display-hidden{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+    }
+    .banner-title{
+        font-size: 45px;
+    }
+    .banner-img-div{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+    .more-flower-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }    
+   .deal-section{
+    flex-direction: column;
+    align-items: center;
+   } 
 }
